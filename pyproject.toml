@@ -1,0 +1,18 @@
+[project]
+name = "wap"
+version = "0.1.0"
+description = "Twitch UI automation tests"
+requires-python = ">=3.13"
+dependencies = [
+    "selenium>=4.21.0",
+    "pytest>=8.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v -ra"
+markers = [
+    "ui: end-to-end UI tests driven through a real browser",
+]
+
+
